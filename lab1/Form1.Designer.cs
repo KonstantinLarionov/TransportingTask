@@ -76,10 +76,9 @@
             // 
             // panel1
             // 
-            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.panel1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.panel1.Controls.Add(this.btnMakeGood);
             this.panel1.Controls.Add(this.btnFillGrids);
             this.panel1.Controls.Add(this.btnOpen);
             this.panel1.Location = new System.Drawing.Point(12, 12);
@@ -89,12 +88,13 @@
             // 
             // btnMakeGood
             // 
-            this.btnMakeGood.Location = new System.Drawing.Point(3, 264);
+            this.btnMakeGood.Location = new System.Drawing.Point(978, 228);
             this.btnMakeGood.Name = "btnMakeGood";
             this.btnMakeGood.Size = new System.Drawing.Size(104, 23);
             this.btnMakeGood.TabIndex = 6;
             this.btnMakeGood.Text = "Сделать хорошо";
             this.btnMakeGood.UseVisualStyleBackColor = true;
+            this.btnMakeGood.Visible = false;
             this.btnMakeGood.Click += new System.EventHandler(this.btnMakeGood_Click);
             // 
             // btnFillGrids
@@ -119,16 +119,16 @@
             // 
             // tabControl1
             // 
-            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.tabControl1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Controls.Add(this.tabPage3);
             this.tabControl1.Location = new System.Drawing.Point(128, 12);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(576, 290);
+            this.tabControl1.Size = new System.Drawing.Size(558, 290);
             this.tabControl1.TabIndex = 1;
             // 
             // tabPage1
@@ -140,14 +140,14 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(568, 264);
+            this.tabPage1.Size = new System.Drawing.Size(550, 264);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Условия задачи";
             // 
             // gridB
             // 
-            this.gridB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.gridB.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.gridB.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.gridB.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridB.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -173,9 +173,9 @@
             // 
             // gridC
             // 
-            this.gridC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridC.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.gridC.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
@@ -195,14 +195,14 @@
             dataGridViewCellStyle3.Format = "N2";
             dataGridViewCellStyle3.NullValue = "null";
             this.gridC.RowsDefaultCellStyle = dataGridViewCellStyle3;
-            this.gridC.Size = new System.Drawing.Size(368, 264);
+            this.gridC.Size = new System.Drawing.Size(350, 264);
             this.gridC.TabIndex = 1;
             this.gridC.Visible = false;
             // 
             // gridA
             // 
-            this.gridA.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)));
+            this.gridA.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
             this.gridA.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.gridA.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridA.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -422,7 +422,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.ClientSize = new System.Drawing.Size(716, 307);
+            this.ClientSize = new System.Drawing.Size(698, 307);
+            this.Controls.Add(this.btnMakeGood);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.panel1);
             this.Name = "Form1";
